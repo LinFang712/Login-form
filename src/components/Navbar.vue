@@ -54,25 +54,9 @@ onMounted(() => {
 
         <div class="d-flex align-items-center">
           <template v-if="user">
-            <span
-              class="fw-bold me-3 text-primary"
-              style="cursor: pointer;"
-              data-bs-toggle="modal"
-              data-bs-target="#profileModal"
-            >
+            <router-link to="/profile" class="fw-bold me-3 text-primary text-decoration-none">
               Hello, {{ user.fullName }}
-            </span>
-
-            <span
-              v-if="user.role === 'admin'"
-              class="nav-link text-danger me-3"
-              style="cursor: pointer;"
-              data-bs-toggle="modal"
-              data-bs-target="#adminModal"
-            >
-              Quản lý tài khoản
-            </span>
-
+            </router-link>
             <button class="btn btn-outline-danger btn-sm" @click="logout">Đăng xuất</button>
           </template>
 
@@ -96,19 +80,6 @@ onMounted(() => {
       </div>
     </div>
   </nav>
-  <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-3">
-        <div class="modal-header">
-          <h5 class="modal-title" id="profileModalLabel">Thông tin cá nhân</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <Profile :user="user" />
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="adminModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content p-3">
