@@ -64,7 +64,8 @@ const login = async () => {
         fullName: rawUser.name || rawUser.fullName || 'Người dùng',
         email: rawUser.email,
         gender: (rawUser.gender || 'other').toLowerCase(),
-        dob: rawUser.dob || '01-01-2000'
+        dob: rawUser.dob || '01-01-2000',
+        role: rawUser.role || 'user'
       }
 
       localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser))

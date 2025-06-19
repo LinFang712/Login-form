@@ -8,7 +8,8 @@ import PostList from './components/PostList.vue'
 
 <template>
   <div>
-
+    <Navbar /> <!-- hoặc MainNavbar, v.v. -->
+    <router-view />
     <Register />
     <Login />
     <Home />

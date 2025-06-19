@@ -76,29 +76,33 @@
       "id": "1",
       "username": "admin",
       "password": "123456",
-      "email": "admin@example.com",
-      "name": "Admin User"
+      "email": "admin@gmail.com",
+      "name": "Admin User",
+      "role": "admin"
     },
     {
       "id": "2",
       "username": "john",
       "password": "john123",
       "email": "john@example.com",
-      "name": "John Doe"
+      "name": "John Doe",
+      "role": "user"
     },
     {
       "id": "4c20",
       "email": "lan@gmail.com",
       "name": "Lân",
-      "password": "123456"
+      "password": "123456",
+      "role": "user"
     },
     {
       "id": "8eae",
       "email": "lan@fpt.com",
       "fullName": "Hoàng Lân",
-      "password": "123456",
+      "password": "0123456",
       "gender": "Male",
-      "dob": "2025-06-01"
+      "dob": "2025-06-01",
+      "role": "user"
     }
   ],
   "carousel": [
