@@ -45,12 +45,12 @@ const deletePost = async (id) => {
 onMounted(fetchPosts);
 </script>
 <template>
-    <div>
+    <!-- <div>
         <h2>Danh sách bài viết</h2>
         <ul> 
             <li v-for="post in posts" :key="post.id">
                 {{ post.title }} - {{ post.content }}
             </li>
         </ul>
-    </div>
+    </div> -->
 </template>

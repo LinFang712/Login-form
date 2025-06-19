@@ -3,23 +3,39 @@
     <Navbar />
 
     <!-- Hero Carousel -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner" style="height: 320px;">
-        <div class="carousel-item active h-100">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReILJTQcYw6SDbKWsi4bPTgZ6V5zXj7zLXbg&s" class="d-block w-100 h-100 object-fit-cover" alt="cat" />
-        </div>
-      </div>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
-      </div>
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner" style="height: 320px;">
+    <div class="carousel-item active h-100">
+      <img src="../img/IT.png" class="d-block w-100 h-100 object-fit-cover" alt="Banner 1" />
     </div>
+    <div class="carousel-item h-100">
+      <img src="../img/banner2.png" class="d-block w-100 h-100 object-fit-cover" alt="Banner 2" />
+    </div>
+    <div class="carousel-item h-100">
+      <img src="../img/banner3.png" class="d-block w-100 h-100 object-fit-cover" alt="Banner 3" />
+    </div>
+  </div>  
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
 
     <!-- Section Heading -->
     <div class="container mt-5">
-      <h2 class="fw-bold mb-4">Section heading</h2>
+      <h2 class="fw-bold mb-4">Bài viết nổi bật</h2>
       <div class="row g-4">
         <div
           class="col-md-6"
@@ -43,23 +59,48 @@
     </div>
 
     <!-- Footer -->
-    <footer class="container mt-5 py-4 border-top">
-      <div class="row">
-        <div class="col-md-4 mb-3">Site name</div>
-        <div class="col-md-4 mb-3">
-          <div>Topic</div>
-          <div>Page</div>
-          <div>Page</div>
-          <div>Page</div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div>Topic</div>
-          <div>Page</div>
-          <div>Page</div>
-          <div>Page</div>
+    <!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Giới thiệu -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">My Blog</h5>
+        <p>Chia sẻ kiến thức, kinh nghiệm và những câu chuyện thú vị về lập trình, công nghệ và cuộc sống.</p>
+      </div>
+
+      <!-- Liên kết nhanh -->
+      <div class="col-md-4 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Liên kết nhanh</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Trang chủ</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Giới thiệu</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Bài viết</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <!-- Liên hệ -->
+      <div class="col-md-4 mb-4">
+        <h6 class="text-uppercase fw-bold mb-3">Liên hệ</h6>
+        <p><i class="bi bi-envelope-fill me-2"></i>contact@myblog.com</p>
+        <p><i class="bi bi-phone-fill me-2"></i>+84 123 456 789</p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light fs-5"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light fs-5"><i class="bi bi-github"></i></a>
         </div>
       </div>
-    </footer>
+    </div>
+
+    <hr class="border-light" />
+    <div class="text-center small">
+      © 2025 My Blog. Được thiết kế bằng Bootstrap 5.
+    </div>
+  </div>
+</footer>
+
   </div>
 </template>
 

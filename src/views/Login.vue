@@ -1,11 +1,5 @@
 <template>
-  <div
-    class="modal fade"
-    id="loginModal"
-    tabindex="-1"
-    aria-labelledby="loginModalLabel"
-    aria-hidden="true"
-  >
+  <div class="modal fade"id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-body p-4">
@@ -64,8 +58,16 @@ const login = async () => {
     })
 
     if (res.data.length > 0) {
-      const user = res.data[0]
-      localStorage.setItem('loggedInUser', JSON.stringify(user))
+      const rawUser = res.data[0]
+
+      const loggedInUser = {
+        fullName: rawUser.name || rawUser.fullName || 'Người dùng',
+        email: rawUser.email,
+        gender: (rawUser.gender || 'other').toLowerCase(),
+        dob: rawUser.dob || '01-01-2000'
+      }
+
+      localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser))
       alert('Đăng nhập thành công!')
       errorMessage.value = ''
 

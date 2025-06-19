@@ -1,12 +1,14 @@
 <script setup>
-import Navbar from './components/Navbar.vue'
+
 import Register from './views/Register.vue'
 import Login from './views/Login.vue'
+import Home from './views/Home.vue'
+import PostList from './components/PostList.vue'
 </script>
 
 <template>
   <div>
-    <Navbar />
+
     <Register />
     <Login />
     <Home />

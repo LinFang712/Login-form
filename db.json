@@ -91,6 +91,14 @@
       "email": "lan@gmail.com",
       "name": "Lân",
       "password": "123456"
+    },
+    {
+      "id": "8eae",
+      "email": "lan@fpt.com",
+      "fullName": "Hoàng Lân",
+      "password": "123456",
+      "gender": "Male",
+      "dob": "2025-06-01"
     }
   ],
   "carousel": [
